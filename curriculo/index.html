@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo.css" />
@@ -12,14 +15,15 @@
         <img src="fotogabriel.png" alt="foto, pessoa de cabelo preto" />
       </div>
       <div class="links">
-        <a terget="_blank" href="http://" github.com>Github</a>
-        <a target="_blank" href="http://" youtube.com>Youtube</a>
-        <a target="_blank" href="http://" linkedin.com>linkedin</a>
+        <a terget="_blank" href="http://github.com">Github</a>
+        <a target="_blank" href="https://youtube.com">Youtube</a>
+        <a target="_blank" href="https://www.linkedin.com">linkedin</a>
       </div>
     </header>
     
     <section class="descricao">
         <p>Coloque aqui uma breve descrição sobre você</p>
+        <button id="botao">Continue Aqui</button>
     </section>
     
     <section class="conteudo">
@@ -41,7 +45,8 @@
 
     <section class="falacomigo">
         <h2>Interessado no meu Curriculo</h2>
-        <form>
+        <form action="https://formspree.io/f/mpwdzqgb"
+        method="POST">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="telefone">Telefone:</label> 
@@ -52,8 +57,10 @@
 
     <section class="conteudo">
       <div class="bloco">
-          <h2>Sobre Mim</h2>
+      <div id="card">  
+        <h2>Sobre Mim</h2>
           <p>Adicione aqui sobre quem você é, suas paixões e o seu dia-a-dia</p>
+      </div>
       </div>
       
       <div class="bloco">
@@ -68,6 +75,6 @@
       </div>
   </section>
 
-   
+  <script src="index.js"></script>   
   </body>
 </html>
